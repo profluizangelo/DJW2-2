@@ -1,0 +1,29 @@
+/*formatando fontes e tabela, alinhamento, cor de texto e de fundo da tabela, alterando formatação anterior -*/
+body {
+  font-family: arial;
+  background: black;
+  color: white;
+  text-align: center;
+}
+h1{width: 100%; black; text-align: center;}
+.imcTable{width: 100%; text-align: center;}
+  .imcTable thead{ background: black; font-weight: bold; color: white;}
+/* alterando fundo da linha #ccc para cinza ou azul*/
+  .imcTable tbody tr:nth-child(2n){background: gray;}
+.imcTable th , .imcTable td{padding: 7px 0;}
+
+@media screen and (max-width: 480 px){
+  .content{width: 94%;}
+  
+  .imcTable thead{display:nome;}
+  .imcTable tbody td{display: flex; flex-direction: column; }
+}
+
+@media only screen and (min-width: 1200px){
+  .content{width=100%;}
+  .imcTable tbody tr td:nth-child(1){width:10%;}
+  .imcTable tbody tr td:nth-child(2){width:30%;}
+  .imcTable tbody tr td:nth-child(3){width:20%;}
+  .imcTable tbody tr td:nth-child(4){width:10%;}
+  .imcTable tbody tr td:nth-child(5){width:30%;}
+}
